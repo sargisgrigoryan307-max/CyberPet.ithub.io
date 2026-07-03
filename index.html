@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberPet — Агентство кибер-питомцев</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Панель Навигации -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href=""><img src="Image/Logo.png" alt=""></a>
+            </div>
+            <button class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#PET_Card">Каталог</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#contact's">Контакты</a></li>
+            </ul>
+            <br>
+            <li class="dropdown">
+                <button class="dropdown-btn">Профиль ▼</button>
+                
+                <div class="dropdown-content" id="login-menu">
+                    <a href="#">Вход</a>
+                    <a href="#">Регистрация</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Как гость</a>
+                    <a href="#">Админ</a>
+                </div>
+            </li>          
+        </div>
+    </header>
+
+    <!-- Демонстрационная часть -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-info">
+                <h1>CyberPet</h1>
+                <p class="hero-subtitle">Агентство по подбору и аренде кибер-питомцев</p>
+                
+                <div class="hero-buttons">
+                    <a href="#PET_Card" class="btn-primary">Выбрать питомца</a>
+                </div>
+
+                <br>
+                <button class="btn-video"><img src="Image/Видео.png" alt=""><b>смотреть видео</b></button>
+            </div>
+            <div class="hero-image-container">
+                <a href=""> <img src="Image/кибер-пёс.png" alt="кибер-пёс"></a>
+            </div>
+        </div>
+    </section>
+<hr>
+    <section class="features">
+        <div class="container">
+
+            <!-- Преиущества -->
+            <h2 class="section-title">Почему выбирают <span>CyberPet</span></h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon cyan">
+                        <a href=""><img src="Image/Защита.jpg" alt="защита"></a>
+                        <hr>
+                    </div>
+                    <p class="feature-text">Все наши кибер питомцы способны защищать вас</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon pink">
+                         <a href=""><img src="Image/технологи.jpg" alt="технологии"></a>
+                        <hr>
+                    </div>
+                    <p class="feature-text">Использование новейших технологий</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon cyan">
+                         <a href=""><img src="Image/Автономность" alt="автономность"></a>
+                        <hr>
+                    </div>
+                    <p class="feature-text">Высокая автономность</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon pink">
+                         <a href=""><img src="Image/поддержка.jpg" alt="поддержка"></a>
+                        <hr>
+                    </div>
+                    <p class="feature-text">Абсолютная забота и любовь</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon cyan">
+                         <a href=""><img src="Image/безопасность.jpg" alt="безопасность"></a>
+                        <hr>
+                    </div>
+                    <p class="feature-text">Безопасность и надежность</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon cyan">
+                        <a href=""><img src="Image/Контроль.jpg" alt="контроль"></a>
+                        <hr>
+                    </div>
+                    <p class="feature-text">Удаленное управление</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог питомцев -->
+<section id="PET_Card">
+    <div class="pets-grid">
+
+    <a href="Pet's card's.html?id=dog" class="pet-card">
+        <img src="Image/кибер-пёс.png" alt="Кибер-Пёс" class="pet-pic">
+        <div class="pet-card-info">
+            <h3 class="pet-card-title">Кибер-Пёс</h3>
+            <div class="pet-card-price">30 000 ₽</div>
+        </div>
+    </a>
+
+    <a href="Pet's card's.html?id=cat" class="pet-card">
+        <img src="Image/кибер-кот.png" alt="Кибер-кот" class="pet-pic">
+        <div class="pet-card-info">
+            <h3 class="pet-card-title">Кибер-кот</h3>
+            <div class="pet-card-price">20 900 ₽</div>
+        </div>
+    </a>
+
+    <a href="Pet's card's.html?id=rabbit" class="pet-card">
+        <img src="Image/кибер-кролик.png" alt="Кибер-кролик" class="pet-pic">
+        <div class="pet-card-info">
+            <h3 class="pet-card-title">Кибер-Кролик</h3>
+            <div class="pet-card-price">15 000 ₽</div>
+        </div>
+    </a>
+
+    <a href="Pet's card's.html?id=owl" class="pet-card">
+        <img src="Image/кибер-сова.png" alt="Кибер-сова" class="pet-pic">
+        <div class="pet-card-info">
+            <h3 class="pet-card-title">Кибер-Сова</h3>
+            <div class="pet-card-price">40 000 ₽</div>
+        </div>
+    </a>
+
+    <a href="Pet's card's.html?id=chameleon" class="pet-card">
+        <img src="Image/кибер-хамлеон.png" alt="Кибер-хамелеон" class="pet-pic">
+        <div class="pet-card-info">
+            <h3 class="pet-card-title">Кибер-хамелеон</h3>
+            <div class="pet-card-price">35 000 ₽</div>
+        </div>
+    </a>
+
+    <a href="Pet's card's.html?id=turtle" class="pet-card">
+        <img src="Image/кибер-черепаха.png" alt="Кибер-черепаха" class="pet-pic">
+        <div class="pet-card-info">
+            <h3 class="pet-card-title">Кибер-черепаха</h3>
+            <div class="pet-card-price">40 000 ₽</div>
+        </div>
+    </a>
+</div>
+</section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-text">Cyber<span>Pet</span></div>
+                </div>
+                <p class="footer-desc">Агентство по подбору и аренде кибер-питомцев</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Меню</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Услуги</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Услуги</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Подбор</a></li>
+                    <li><a href="#">Аренда</a></li>
+                    <li><a href="#">Покупка</a></li>
+                </ul>
+            </div>
+            <div id="contact's">
+                <h4 class="footer-title">Контакты</h4>
+                <p class="footer-info-text">+7(777) 111 22 33<br>info7@cyberpet.ru<br>г. Тольятти</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Подписка</h4>
+                <div class="footer-premium-box">Премиум доступ и бесплатная доставка.</div>
+            </div>
+        </div>
+        <div class="container footer-bottom">@2070 CyberPet. Все права защищены</div>
+    </footer>
+
+    <script>
+        // 5. Бургер-меню
+        const burgerBtn = document.querySelector('.burger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // Отслеживаем клик по кнопке бургера
+            burgerBtn.addEventListener('click', () => {
+                // Тогглим (включаем/выключаем) класс active для кнопки и для самого меню
+                burgerBtn.classList.toggle('active');
+                navMenu.classList.toggle('active');
+        });
+
+        // Находим кнопку войти и само выпадающее меню
+const dropdownBtn = document.querySelector('.dropdown-btn');
+const loginMenu = document.getElementById('login-menu');
+
+// Переключаем показ меню при клике на кнопку
+dropdownBtn.addEventListener('click', (event) => {
+    event.stopPropagation(); // Чтобы клик не улетал дальше
+    loginMenu.classList.toggle('show');
+});
+
+// Если пользователь кликнет в любое другое место экрана — меню закроется
+document.addEventListener('click', () => {
+    loginMenu.classList.remove('show');
+});
+    </script>
+</body>
+</html>

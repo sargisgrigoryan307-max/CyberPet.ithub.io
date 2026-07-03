@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberPet — Кибер-кот v2.0</title>
+    <link rel="stylesheet" href="style_cards.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href=""><img src="Image/Logo.png" alt=""></a>
+            </div><button class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <li class="dropdown">
+                <button class="dropdown-btn">Профиль ▼</button>
+                
+                <div class="dropdown-content" id="login-menu">
+                    <a href="#">Вход</a>
+                    <a href="#">Регистрация</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Как гость</a>
+                    <a href="#">Админ</a>
+                </div>
+            </li>
+            
+        </div>
+    </header>
+
+    <!-- Действия -->
+    <div class="breadcrumbs-section">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><span>Кибер-кот v2.0</span></li>
+            </ul>
+        </div>
+    </div>
+
+                  <div class="pet-container">
+                        <div class="pet-gallery">
+                            <div class="main-image-wrapper">
+                                <img src="" alt="" id="main-img" class="main-pet-img">
+                            </div>
+                            
+                            <div class="thumbnails-grid">
+                                <div class="thumb-box active"><img src="" alt="Деталь 1" class="thumb-img"></div>
+                                <div class="thumb-box"><img src="" alt="Деталь 2" class="thumb-img"></div>
+                                <div class="thumb-box"><img src="" alt="Деталь 3" class="thumb-img"></div>
+                                <div class="thumb-box"><img src="" alt="Деталь 4" class="thumb-img"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="pet-info">
+                            <h1 id="pet-title" class="pet-title">Загрузка...</h1>
+                            <br>                          
+                            <p id="pet-desc" class="pet-description">Ожидание данных...</p>
+                            <br>
+                            <div id="pet-price" class="pet-price">0 ₽</div>
+                        </div>
+                        
+                    </div>
+                <br>
+                <!-- Кнопка с ховер-эффектом -->
+                <button class="btn-rent-action">Купить или арендовать питомца &rarr;</button>
+            </div>
+
+        </div>
+    </main> 
+    <!-- Подвал -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><div class="logo-text">Cyber<span>Pet</span></div></div>
+                <p class="footer-desc">Агентство по подбору и аренде кибер-питомцев</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Меню</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Услуги</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Услуги</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Подбор</a></li>
+                    <li><a href="#">Аренда</a></li>
+                    <li><a href="#">Покупка</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Контакты</h4>
+                <p class="footer-info-text">+7(777) 111 22 33<br>info7@cyberpet.ru<br>г. Тольятти</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Подписка</h4>
+                <div class="footer-premium-box">Премиум доступ и бесплатная доставка.</div>
+            </div>
+        </div>
+        <div class="container footer-bottom">@2070 CyberPet. Все права защищены</div>
+    </footer>
+
+    <script>
+        // 1. Создаем базу данных прямо в коде (ключи совпадает с ?id=... в ссылках)
+        const petsDatabase = {
+            dog: {
+                title: "Кибер-пёс",
+                price: "30 000 ₽/мес.",
+                img: "Image/кибер-пёс.png",
+                desc: "Модель нового поколения, оснащенная квантовым био-процессором, титановыми сервоприводами и оптическими сенсорами ночного видения. Надежный защитник вашего цифрового периметра и верный спутник в любой опасной подсети.",
+                gallery: [
+                        "Image/Кибер-пёс.png",
+                        "Image/голова пса.jpg",
+                        "Image/задняя часть пса.jpg",
+                        "Image/ядро пса.jpg"] },     
+            cat: {
+                title: "Кибер-кот",
+                price: "20 000 ₽/мес.",
+                img: "Image/кибер-кот.png",
+                desc:"Идеальный ночной охотник. Оснащен бесшумными гидравлическими лапами, тепловизорами в глазах и адаптивной системой маскировки. Отлично ловит цифровых вредителей и устраняет скрытые вирусы в вашей локальной сети.",
+                gallery: [
+                        "Image/Кибер-кот.png",
+                        "Image/голова кота.jpg",
+                        "Image/задняя часть кота.jpg",
+                        "Image/ядро кота.jpg"] },
+                   
+                rabbit: {
+                title: "Кибер-кролик",
+                price: "15 000 ₽/мес.",
+                img: "Image/кибер-кролик.png",
+                desc:"Разведчик сверхвысоких скоростей. Использует неоновые ускорители импульсов для моментального перемещения. Идеален для тестирования пропускной способности каналов связи и молниеносной доставки шифрованных пакетов данных.",
+                gallery: [
+                        "Image/кибер-кролик.png",
+                        "Image/голова кролика.jpg",
+                        "Image/уши кролика.jpg",
+                        "Image/ядро кролика.jpg"]},
+                owl: {
+                title: "Кибер-сова",
+                price: "40 000 ₽/мес.",
+                img: "Image/кибер-сова.png",
+                desc:"Автономный летающий дата-центр. Сканирует пространство на 360 градусов с помощью квантовых лидаров. Способна перехватывать зашифрованные радиосигналы, фильтровать спам и обрабатывать терабайты логов прямо в полете.",
+                gallery:[
+                        "Image/кибер-сова.png",
+                        "Image/голова совы.jpg",
+                        "Image/крыло совы.jpg",
+                        "Image/ядро совы.jpg"]
+                    },
+
+                chameleon: {
+                title: "Кибер-хамелеон",
+                price: "35 000 ₽/мес.",
+                img: "Image/кибер-хамлеон.png",
+                desc:"Мастер скрытого мониторинга. Оснащен панелями активного оптического камуфляжа и продвинутыми алгоритмами мимикрии. Способен незаметно сливаться с любым сетевым окружением, перехватывать пакеты данных и проводить глубокий аудит безопасности.",
+                gallery:[
+                        "Image/кибер-хамлеон.png",
+                        "Image/голова хамелеона.jpg",
+                        "Image/шипы хамелеона.jpg",
+                        "Image/ядро хамелеона.jpg"] },
+       
+                turtle: {
+                title: "Кибер-черепаха",
+                price: "40 000 ₽/мес.",
+                img: "Image/кибер-черепаха.png",
+                desc:"Живой аппаратный брандмауэр повышенной прочности. Её панцирь состоит из многослойной титановой брони и крипто-модулей. Медленно, но абсолютно надежно шифрует любые объемы конфиденциальных данных и блокирует самые мощные DDoS-атаки.",
+                gallery:[
+                        "Image/кибер-черепаха.png",
+                        "Image/голова черепахи.jpg",
+                        "Image/панцырь черепахи.jpg",
+                        "Image/ядро черепахи.jpg"]
+            } 
+      };
+    
+        // 2. Скрипт читает из адресной строки браузера
+        const urlParams = new URLSearchParams(window.location.search);
+        const petId = urlParams.get('id'); // получим 'cat', 'dog' и т.д.
+    
+        // 3. Достаем данные выбранного питомца
+        const currentPet = petsDatabase[petId] || petsDatabase['dog'];
+    
+        // 4. Подставляем данные на страницу
+            document.getElementById('pet-title').textContent = currentPet.title;
+            document.getElementById('pet-price').textContent = currentPet.price;
+            document.getElementById('pet-desc').textContent = currentPet.desc;
+
+            // Обновляем главное фото при загрузке страницы
+            const mainImg = document.getElementById('main-img');
+            mainImg.src = currentPet.img;
+            mainImg.alt = currentPet.title;
+
+            // Находим все маленькие картинки и их рамки (thumb-box)
+            const thumbnails = document.querySelectorAll('.thumb-img');
+            const thumbBoxes = document.querySelectorAll('.thumb-box');
+
+            // Перебираем превьюшки и наполняем их данными из массива gallery
+            thumbnails.forEach((img, index) => {
+            // Проверяем, есть ли у этого животного картинка под таким номером в базе данных
+            if (currentPet.gallery && currentPet.gallery[index]) {
+            img.src = currentPet.gallery[index];
+            img.alt = `${currentPet.title} - фото ${index + 1}`;
+            
+            // Оживляем клик по рамке миниатюры:
+            thumbBoxes[index].addEventListener('click', () => {
+                // 1. Меняем главное большое фото на то, по которому кликнули
+                mainImg.src = currentPet.gallery[index];
+                
+                // 2. Убираем класс active (подсветку) у всех рамок
+                thumbBoxes.forEach(box => box.classList.remove('active'));
+                
+                // 3. Добавляем класс active именно той рамке, на которую нажали
+                thumbBoxes[index].classList.add('active');
+            });
+        }
+    });
+                // 5. Бургер-меню
+            const burgerBtn = document.querySelector('.burger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // Отслеживаем клик по кнопке бургера
+            burgerBtn.addEventListener('click', () => {
+                // Тогглим (включаем/выключаем) класс active для кнопки и для самого меню
+                burgerBtn.classList.toggle('active');
+                navMenu.classList.toggle('active');
+        });
+                // Находим кнопку войти и само выпадающее меню
+                const dropdownBtn = document.querySelector('.dropdown-btn');
+                const loginMenu = document.getElementById('login-menu');
+
+                // Переключаем показ меню при клике на кнопку
+                dropdownBtn.addEventListener('click', (event) => {
+                    event.stopPropagation(); // Чтобы клик не улетал дальше
+                    loginMenu.classList.toggle('show');
+                });
+
+                // Если пользователь кликнет в любое другое место экрана — меню закроется
+                document.addEventListener('click', () => {
+                    loginMenu.classList.remove('show');
+                });
+
+    </script>
+
+</body>
+</html>
